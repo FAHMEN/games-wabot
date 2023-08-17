@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NEVADA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            text-align: center;
+            font-size: 16px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbuUsH5IoQ-s1s0f8XwTME5RhRuTvoo5KL5g&usqp=CAU");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        h1 {
+            color: black;
+            font-size: 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px auto;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .contact-button,
+        .play-button {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: transparent;
+            color: blue;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+    <script>
+        var clickCount = 0;
+
+        function titleClick() {
+            clickCount++;
+            if (clickCount === 3) {
+                window.location.href = "https://youtu.be/DnNPMrwoCx4";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 onclick="titleClick()">NEVADA</h1>
+    <div class="video-container">
+        <iframe width="100%" height="225" src="https://www.youtube.com/embed/5QP_W-yAlRc" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p>
+        <strong>
+            I've been painting every fence I know<br>
+            Every color bleeds into the same<br>
+            'Cause before you go and walk away<br>
+            Yeah, you better know where you're going<br>
+            Hey ya, hey ya<br>
+            You're a wanderer, just like me<br>
+            Hey ya, hey ya<br>
+            Yeah, you better know where you're going<br>
+            Yeah, you better know where you're going<br>
+            I've been painting every fence I know<br>
+            Every color bleeds into the same<br>
+            'Cause before you go and walk away<br>
+            Yeah, you better know where you're going<br>
+            Hey ya, hey ya<br>
+            You're a wanderer just like me<br>
+            Hey ya, hey ya<br>
+            Yeah, you better know where you're going<br>
+            Yeah, you better know where you're going<br>
+            Hey ya, hey ya<br>
+            You're a wanderer just like me<br>
+            Hey ya, hey ya<br>
+            Yeah, you better know where you're going<br>
+            Yeah, you better know where you're going<br>
+            Yeah, you better know where you're going<br>
+            You're a wanderer just like me<br>
+            Yeah, you better know where you're going<br>
+            You're a wanderer just like me<br>
+        </strong>
+    </p>
+    <div class="button-container">
+        <a class="contact-button" href="https://api.whatsapp.com/send?phone=+79269175361&text=Permisi%20saya%20ingin%20bertanya">Contact Us</a>
+        <button class="play-button" onclick="playAudio()">Play</button>
+    </div>
+
+    <audio id="audio" controls style="display: none;">
+        <source src="https://shorturl.at/jENX7" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('audio');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
